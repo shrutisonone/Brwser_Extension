@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "TruScholar Account Fetcher",
+  "version": "1.0",
+  "description": "Logs into TruScholar and fetches user details.",
+  "permissions": [
+    "storage",
+    "identity",
+    "cookies",
+    "activeTab",
+    "webRequest",
+    "declarativeNetRequest"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "107884157717-shpubndle5uibu35f8rbm0s77fhj4fsi.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+ "host_permissions": [
+  "https://app.truscholar.io/*",
+  "https://api.truscholar.com/*"
+]
+
+}

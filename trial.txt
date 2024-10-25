@@ -1,0 +1,25 @@
+
+//{
+//  "manifest_version": 3,
+//  "name": "Auto-Fill Job Application from Wallet",
+//  "version": "1.0",
+//  "description": "Fetches wallet details and auto-fills job applications.",
+//  "permissions": [
+//    "activeTab",
+//    "scripting",
+//    "storage"
+//  ],
+//  "background": {
+//    "service_worker": "background.js"
+//  },
+//  "content_scripts": [
+//    {
+//      "matches": ["https://techolution.app.param.ai/jobs/full-stack-intern/"], 
+//      "js": ["content.js"]
+//    }
+//  ],
+//  "action": {
+//    "default_popup": "popup.html"
+//  }
+//}
+
